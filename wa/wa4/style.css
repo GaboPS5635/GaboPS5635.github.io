@@ -99,6 +99,8 @@ html {
 
 .card2 article img {
   max-height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
   float: right;
 }
 
@@ -126,15 +128,17 @@ html {
 }
 
 .card2 article {
-    height: 16em;
+    height: 17em;
     line-height: 1.5em;
     background-color: rgba(150, 23, 23, 0.3);
-    padding: 0em;
+    padding-bottom: 0.5em;
 }
 
 .card2 article img {
-    height: 10em;
-    width: 10em;
+    padding-top: 0.5em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 12em;
+    width: 12em;
 }
 .card2 article p {
     padding-left: 1em;
@@ -144,7 +148,7 @@ html {
 
 .card2 footer p {
     font-size:1.5em;
-    line-height: 2em;
+    line-height: 1em;
 }
 
 
