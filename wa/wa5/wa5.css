@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url(../../img/bluelock.webp) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.overlay {
+  position: relative;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+/* SCORECARD */
+.scorecard {
+  background: linear-gradient(to top, rgba(19, 19, 19, 0.8), rgba(184, 48, 48, 0.5));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team .name {
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.bar {
+  width: 6px;
+  height: 35px;
+  background: gray;
+  border-radius: 2px;
+}
+
+.bar.red {
+  background: red;
+}
+
+.bar.blue {
+  background: #007bff;
+}
+
+.score-center {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.match-time {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+/* LIVE STATS */
+.live-stats {
+  background: #222;
+  color: white;
+  margin-top: 40px;
+  padding: 15px 20px;
+  max-width: 240px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  font-size: 14px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.isagi-pfp {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 260px; /* slightly larger than stats box */
+  height: auto;
+  z-index: 0;
+  border-radius: 12px;
+  box-shadow: rgba(0,0,0,0.4)
+  object-fit: cover;
+}
+
+.live-stats .title {
+  font-weight: bold;
+  color: #00cc66;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.stat-line {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.stat-line span:first-child {
+  color: #ccc;
+}
+
+.stat-line span:last-child {
+  color: white;
+}
