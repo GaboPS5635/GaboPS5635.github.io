@@ -1,0 +1,17 @@
+div{
+    height: 250px; 
+    width: 250px;
+    background-color: red;
+}
+
+@media screen and (max-width: 1000px) {
+    div{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    div{
+        background-color: blue;
+    }
+}
