@@ -5,6 +5,8 @@ body{
     width: 25vw;
     height: 20vh;
     background-color: indianred;
+    transition-property: background-color;
+    transition-duration: 5s;
 }
 
 #box1:hover{
