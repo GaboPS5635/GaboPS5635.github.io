@@ -69,16 +69,16 @@ hr {
 
 .concert {
   background: #fff;
-  border: 2px solid #ffb6f1;
+  border: 2px solid #000000;
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 4px 4px 0 #ff4ec8;
+  box-shadow: 4px 4px 0 #080708;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .concert:hover {
   transform: translateY(-4px);
-  box-shadow: 6px 6px 0 #574b90;
+  box-shadow: 6px 6px 0 #ffffff;
 }
 
 @media (min-width: 700px) {
@@ -100,6 +100,5 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #ffb6f1 0%, #f7f2f9 100%);
   z-index: -1;
 }
