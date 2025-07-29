@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 250px;
+      cursor: pointer;
+      border: 3px solid #ccc;
+      border-radius: 8px;
+    }
+
+    #secretMessage {
+      margin-top: 20px;
+      font-size: 18px;
+      display: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="toggleMode">Toggle Light/Dark Mode</button>
+
+  <h2>Click the image to reveal a secret message</h2>
+  <img id="secretImage" src="https://via.placeholder.com/250x150.png?text=Click+Me" alt="Secret Image">
+
+  <div id="secretMessage">Don't Tap The Glass</div>
+
+  <script>
+    
+    document.getElementById("toggleMode").addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+    });
+
+    
+    document.getElementById("secretImage").addEventListener("click", function () {
+      document.getElementById("secretMessage").style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
