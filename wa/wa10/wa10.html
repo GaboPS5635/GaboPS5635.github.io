@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Silly story generator</title>
+
+    <style>
+     body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: url('../../img/cartidating.png') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.8); /* fallback if image fails */
+  box-shadow: 0 0 20px pink;
+  backdrop-filter: blur(8px);
+}
+
+label {
+  font-weight: bold;
+  color: #ff69b4;
+  font-size: 1.1rem;
+}
+
+div {
+  padding-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 12px;
+  border: 2px solid #ffb6c1;
+  width: 80%;
+  background-color: #fff0f5;
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  transform: scale(1.2);
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+button.randomize {
+  background: linear-gradient(to right, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+button.randomize:hover {
+  background: linear-gradient(to right, #ff1493, #db007d);
+  transform: scale(1.05);
+}
+
+p.story {
+  background: rgba(255, 240, 245, 0.9);
+  color: #8b0000;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 1rem;
+  visibility: hidden;
+  border: 2px dashed #ff69b4;
+  margin-top: 20px;
+}
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="eg. Bob" />
+    </div>
+    <div>
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+    <script src="wa10.js"></script>
+  </body>
+</html>
