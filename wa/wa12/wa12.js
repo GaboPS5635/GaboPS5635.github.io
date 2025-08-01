@@ -21,7 +21,7 @@ async function getPokemon() {
 
         const name = data.name;
         const sprite = data.sprites.front_default;
-        const type = data.types[0].type.namse; 
+        const type = data.types[0].type.name; 
         let flavor = "";
 
         for (let entry of speciesData.flavor_text_entries) {
@@ -46,7 +46,7 @@ function displayPokemon(name, sprite, type, flavor) {
     quoteText.innerHTML = `
         <img src="${sprite}" alt="${name}" width="120">
         <h2>${name.toUpperCase()}</h2>
-        <p>Type: ${type}</p>
+        <p>Type: ${type} </p>
     `;
 
     const answerArea = document.querySelector("#js-answer-text");
